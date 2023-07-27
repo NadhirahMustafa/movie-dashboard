@@ -1,0 +1,62 @@
+.dashboard {
+    &--page-title {
+        color: palevioletred;
+        font-size: 30px;
+        padding: 20px 0 20px 0;
+        font-style: oblique;
+        font-weight: 900;
+        border: 1px dotted red;
+    }
+}
+
+.search {
+    &--padding {
+        padding: 20px 0 20px 0;
+    }
+
+    &--justify {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+
+    &--textfield-padding {
+        padding-right: 10px;
+    }
+
+    &--button-padding {
+        padding-right: 5px;
+    }
+    &--button-cursor {
+        cursor: pointer;
+    }
+}
+
+.table {
+    &--border {
+        border: 1px solid purple;
+        padding: 10px;
+    }
+}
+th,
+td {
+    border: 1px solid black;
+}
+th:nth-child(1){
+    width: 251px;
+}
+th:nth-child(2){
+    width: 40px;
+}
+th:nth-child(3){
+    width: 66px;
+}
+th:nth-child(4){
+    width: 213px;
+}
+th:nth-child(5){
+    width: 242px;
+}
+th:nth-child(6){
+    width: 356px;
+}
