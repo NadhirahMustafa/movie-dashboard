@@ -27,7 +27,7 @@ const Search: React.FC<movieListProps> = ({ init, list, onSearch }) => {
     };
 
     const filteredData = () => {
-        let result = value !== '' ? list.filter(
+        let result = value !== '' ? init.filter(
             (movie: any) =>
                 movie.title.toLowerCase().includes(value.toString().toLowerCase())
                 || movie.genres.toString().toLowerCase().includes(value.toString().toLowerCase())
