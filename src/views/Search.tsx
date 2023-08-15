@@ -5,11 +5,10 @@ import { Grid, TextField } from '@mui/material';
 
 interface movieListProps {
     init: string[];
-    list: any[];
     onSearch: (searchTerm: string[]) => void;
 }
 
-const Search: React.FC<movieListProps> = ({ init, list, onSearch }) => {
+const Search: React.FC<movieListProps> = ({ init, onSearch }) => {
 
     const [value, setValue] = useState('');
 

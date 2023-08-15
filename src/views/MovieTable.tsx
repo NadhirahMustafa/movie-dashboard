@@ -8,7 +8,7 @@ interface movieListProps {
 const MovieTable: React.FC<movieListProps> = ({ list }) => {
 
     return (
-        <Grid className='table--border'>
+        <Grid>
             <Table className='table--data'>
                 <thead>
                     <tr>
@@ -21,8 +21,8 @@ const MovieTable: React.FC<movieListProps> = ({ list }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {list.map((row: any) => (
-                        <tr key={row.id}>
+                    {list.map((row: any, index) => (
+                        <tr key={row.id} className={index % 2 === 0 ? 'even' : 'odd'}>
                             <td>{row.title}</td>
                             <td>{row.year}</td>
                             <td>{row.runtime}</td>
